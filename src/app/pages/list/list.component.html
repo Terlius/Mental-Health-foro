@@ -1,0 +1,12 @@
+<app-hero [title]="'Mental Health Foro'"></app-hero>
+
+<div class="shadow principal bg-dark shadow-div">
+  <div class="title">Feelings</div>
+
+  <button routerLink="add" class="btn btn-primary add-feeling-button">Add Feeling</button>
+</div>
+
+<div class="list bg-dark">
+  <app-card *ngFor="let item of listPosts" [post]="item" ></app-card>
+  
+</div>

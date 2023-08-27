@@ -1,0 +1,112 @@
+
+.blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+  }
+  
+  .blockquote-custom-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -40px;
+    left: 19px;
+  }
+
+  .card{
+    margin-top: 30px;
+  }
+
+  .blockquote-footer::before {
+    content: none;
+  }
+  .contact-link {
+    text-decoration: none;
+    color: #1f364e;
+    font-family: "Arial", sans-serif;
+    font-size: 10px;
+    transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+  }
+  
+  .contact-link:hover {
+    color: #ff6600; /* Cambia el color al pasar el cursor sobre el enlace */
+  }
+  
+   i {
+    margin-right: 5px;
+  }
+  
+  .reaction-buttons {
+    display: flex;
+  }
+  
+  .reaction-button {
+    margin-right: 10px;
+  }
+  
+  .like-button, .love-button, .sad-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1f364e; /* Color azul o el color que desees */
+    transition: color 0.2s;
+  }
+  
+  .like-button:hover, .love-button:hover, .sad-button:hover {
+    color: #0056b3; /* Color más oscuro al pasar el cursor */
+  }
+  /* Agrega transiciones suaves a los botones de reacción */
+.like-button, .love-button, .sad-button {
+  transition: transform 0.2s, color 0.2s;
+}
+
+/* Agrega una animación de escala al hacer hover sobre los botones */
+.like-button:hover  {
+  transform: scale(1.1);
+  color: #ff6b6b; /* Cambia el color al pasar el cursor */
+}
+
+.love-button:hover {
+  transform: scale(1.1);
+  color: #ffda6b; /* Cambia el color al pasar el cursor */
+}
+
+.sad-button:hover {
+  transform: scale(1.1);
+  color: #b3b3ff; /* Cambia el color al pasar el cursor */
+} 
+
+.count {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6c757d;
+  transition: color 0.3s;
+}
+.contact-link{
+  color: #1f364e;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  transition: color 0.3s; /* Agrega una transición suave al cambio de color */
+  margin-top: 5px;
+  margin-left: 2px;
+}
+/* Agrega un estilo personalizado para la hora del post */
+.post-time {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+.post-time span {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  display: inline-block;
+}

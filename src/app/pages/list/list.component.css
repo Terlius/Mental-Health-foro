@@ -1,0 +1,89 @@
+:host {
+  background-color: #1e96c5;
+}
+.navbar-brand h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.navbar-brand i {
+  font-size: 24px;
+}
+.principal {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px; /* Aumentar el padding para más espacio alrededor */
+  background-color: #333;
+  font-weight: bold;
+  border-radius: 10px;
+  .title {
+    color: white;
+  }
+}
+
+.list {
+  margin-top: 10px;
+  
+  padding: 20px;
+  border-radius: 10px;
+ 
+  justify-items: center;
+}
+
+.add-feeling-button {
+  background: linear-gradient(to right, #0052D4, #4364F7, #6FB1FC); /* Cambiar el color de fondo */
+    border: none;
+    color: white;
+    padding: 10px 20px; /* Añadir espacio interno */
+    border-radius: 5px; /* Redondear las esquinas */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Animación de transición */
+  }
+
+
+  
+  .add-feeling-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .add-feeling-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+  }
+  
+  .add-feeling-button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translate(-50%, -50%) rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .add-feeling-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-feeling-button:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg) scale(2);
+  }
+
+ 

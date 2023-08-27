@@ -1,0 +1,55 @@
+<div class="card">
+  <div class="card-body">
+    <blockquote class="blockquote blockquote-custom bg-white px-3 pt-4">
+      <div class="blockquote-custom-icon bg-info shadow-1-strong">
+        <i class="bi bi-cup-hot"></i>
+      </div>
+      <p class="mb-0 mt-2 font-italic">
+        "{{ post.content }}"
+        <a href="#" class="text-info">@{{ post.username }}</a
+        >.
+      </p>
+      <div class="d-flex align-items-center mt-4" *ngIf="post.contact">
+        <span class="mr-2">
+          <i class="fas fa-envelope"></i>
+          Contact me:
+        </span>
+        <div class="contact-link">
+          <a class="contact-link" href="mailto:{{ post.contact }}">{{
+            post.contact
+          }}</a>
+        </div>
+       
+      </div>
+
+      <footer
+        class="blockquote-footer pt-4 mt-4 border-top d-flex flex-wrap justify-content-between"
+      >
+        <div class="me-3 author">
+          - Someone says <cite title="Source Title">{{ post.title }}</cite>
+        </div>
+        <div class="reaction-buttons">
+          <span class="reaction-button">
+            <button class="like-button" (click)="addLike()">
+              <i class="bi bi-hand-thumbs-up"></i>Like
+            </button>
+            <span class="count">{{ post.likes }}</span>
+          </span>
+          <span class="reaction-button">
+            <button class="love-button" (click)="addLove()">
+              <i class="bi bi-heart"></i>Love
+            </button>
+
+            <span class="count">{{ post.loves }}</span>
+          </span>
+          <span class="reaction-button">
+            <button class="sad-button" (click)="addSad()">
+              <i class="bi bi-emoji-frown"></i>Sad
+            </button>
+            <span class="count">{{ post.sads }}</span>
+          </span>
+        </div>
+      </footer>
+    </blockquote>
+  </div>
+</div>
